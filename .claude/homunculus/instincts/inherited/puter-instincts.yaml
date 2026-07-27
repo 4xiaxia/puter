@@ -1,0 +1,300 @@
+# Instincts generated from https://github.com/4xiaxia/puter
+# Generated: 2026-07-27T19:14:03.895Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: puter-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/puter
+---
+
+# Puter Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the npm_and_yarn group across 4 directories with 22 updates
+
+---
+id: puter-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/puter
+---
+
+# Puter Commit Length
+
+## Action
+
+Write moderate-length commit messages (~77 characters)
+
+## Evidence
+
+- Average commit message length: 77 chars
+- Based on 1 commits
+
+---
+id: puter-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/puter
+---
+
+# Puter Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: puter-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/puter
+---
+
+# Puter Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: puter-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/puter
+---
+
+# Puter Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: puter-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/puter
+---
+
+# Puter Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: puter-instinct-file-naming-camelCase
+trigger: "When creating a new file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct File Naming CamelCase
+
+## Action
+
+Name the file using camelCase format
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: puter-instinct-function-naming-camelCase
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Function Naming CamelCase
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: puter-instinct-class-naming-PascalCase
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Class Naming PascalCase
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: puter-instinct-constant-naming-SCREAMING_SNAKE_CASE
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Constant Naming SCREAMING_SNAKE_CASE
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: puter-instinct-import-relative
+trigger: "When importing modules within the project"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Import Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: puter-instinct-export-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Export Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: puter-instinct-commit-chore-prefix
+trigger: "When making dependency or maintenance updates"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Commit Chore Prefix
+
+## Action
+
+Prefix the commit message with 'chore'
+
+## Evidence
+
+- Seen in commit: 'chore(deps): bump the npm_and_yarn group across 4 directories with 22 updates'
+- Pattern in commits.prefixes
+
+---
+id: puter-instinct-commit-conventional-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Commit Conventional Format
+
+## Action
+
+Use the conventional commit format: <type>(<scope>): <description>
+
+## Evidence
+
+- Pattern in commits.type
+- Seen in commit: 'chore(deps): bump the npm_and_yarn group across 4 directories with 22 updates'
+
+---
+id: puter-instinct-test-location-separate
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: 4xiaxia/puter
+---
+
+# Puter Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
