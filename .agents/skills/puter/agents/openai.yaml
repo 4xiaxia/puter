@@ -1,0 +1,6 @@
+interface:
+  display_name: "Puter"
+  short_description: "Repo-specific patterns and workflows for puter"
+  default_prompt: "Use the puter repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
